@@ -322,6 +322,14 @@
 	width: 1200px;
 	margin: 0 auto;
 }
+.grace_series{
+	overflow: hidden;
+}
+
+.grace_series_left{
+	float: left;
+	width: 171px;
+}
 .grace_series_left .top{
 	background: #ff706e;
 	width: 171px;
@@ -332,3 +340,77 @@
 .grace_series_left .top a img{
 	margin: 0 auto;
 }
+
+.grace_series_left .top p{
+	width: 130px;
+	height: 120px;
+	margin: 0 auto;
+}
+.grace_series_left .top p a{
+	line-height: 26px;
+    height: 26px;
+    font-size: 14px;
+    font-family: "宋体";
+    padding-right: 7px;
+    position: relative;
+    color:#FFFFFF;
+}
+.grace_series_right{
+	float: left;
+}
+.grace_series_list{
+	width: 1200px;
+	margin: 0 auto;
+}
+.grace_series_list a{
+	width: 239px;
+    float: left;
+    background: #fff;
+    margin: 0px;
+    position: relative;
+    display: block;
+    border-top: solid 1px #e4e4e4;
+    border-right: solid 1px #e4e4e4;
+}
+.grace_series_list img{
+	width: 219px;
+    height: 296px;
+    margin: 10px;
+}
+.grace_series_list .title{
+    width: 219px;
+    overflow: hidden;
+    line-height: 26px;
+    height: 24px;
+    margin-top: 10px;
+    display: block;
+    color: #7f7f7f;
+    font-size: 13px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    font-family: "宋体";
+    text-align: center;
+    text-indent: 10px;
+}
+.grace_series_list .price{
+	font-size: 14px;
+    color: #b70202;
+    font-weight: normal;
+    font-family: "微软雅黑";
+}
+
+.grace_series_list .marksale{
+	color: #b1b1b1;
+    font-weight: normal;
+    font-size: 14px;
+    padding-left: 13px;
+    text-decoration: line-through;
+}
+
+.grace_series_list .price_place{
+	width: 219px;
+	height: 24px;
+	margin: 0 auto;
+	text-align: center;
+}
+

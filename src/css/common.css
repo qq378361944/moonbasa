@@ -1,0 +1,56 @@
+@charset "utf-8";
+/*头部的样式*/
+.header_div {
+	background-color: #F6F6F6;
+	margin: 0 auto;
+	width: 100%;
+}
+/*头部登录盒子的样式*/
+.loginmax{
+	border: 1px solid #ededed;
+}
+.loginbox {
+	width: 1200px;
+	margin: 0 auto;
+	height:26px;
+
+}
+/*盒子里面右边类nav的具体样式*/
+.loginbox .logininfo_outdiv {
+	width: auto;
+	height: 26px;
+	position: relative;
+	float: right;
+	z-index: 11;
+	padding-right: 50px;
+	
+}
+/*购物车cart样式*/
+.cart {
+	position: relative;
+	float: right;
+	padding: 0 17px 0 8px;
+	background:url(img/cart.jpg) no-repeat right ;
+}
+.cart a{
+	line-height: 26px;
+}
+/*登录导航栏样式*/
+.loginbox .logininfo {
+	float: right;
+	color: #666;
+	text-align: right;
+	padding-top: 2px;
+}
+.loginbox .logininfo a {
+	color: #666;
+	padding: 0 8px;
+}
+.loginbox span {
+	color: #d4d4d4;
+}
+.loginbox a:hover {
+	color: #e50056;
+}
+
+

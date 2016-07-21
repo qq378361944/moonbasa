@@ -240,6 +240,95 @@
 	width: 1200px;
 }
 .America_show .new_product_week{
+	overflow: hidden;
 	margin: 0 auto;
 	width: 1200px;
+}
+
+.America_show .new_product_show li{
+	float: left;
+}
+
+.America_show .good_product_week{
+	width: 1200px;
+	margin: 0 auto;
+	overflow: hidden;
+}
+
+.good_product_week img{
+	float: left;
+}
+
+.America_show .popular_product_week{
+	width: 1200px;
+	margin: 0 auto;
+	overflow: hidden;
+}
+.popular_product_week .popular_product_week_left{
+	float: left;
+}
+.popular_product_week .popular_product_week_left li{
+	display: none;
+	float:left;
+}
+.popular_product_week .popular_product_week_right{
+	float: right;
+	width: 600px;
+	margin-left:5px ;
+}
+.popular_product_week .popular_product_week_right li{
+	float: left;
+}
+.famous_product{
+	width: 100%;
+	background: #e4e4e4;
+	overflow: hidden;
+}
+.famous_product_box {
+	width:1200px;
+	margin: 0 auto;
+}
+.famous_product_title{
+	display: block;
+	width: 1200px;
+	margin: 0 auto;
+}
+.famous_product_nav{
+	margin: 0 auto;
+	overflow: hidden;
+	width: 550px;
+}
+.famous_product_nav li{
+	float: left;
+    margin: 7px 28px;
+    list-style: none;
+    padding: 0;
+    color: #000000;
+    font-size: 14px;
+    font-family: '微软雅黑';
+}
+.famous_product_left{
+	float: left;
+}
+.famous_product_right{
+	width:904px;
+	float: left;
+	margin-left:10px ;
+}
+.famous_product_right ul li{
+	float: left;
+}
+.sub_brand{
+	width: 1200px;
+	margin: 0 auto;
+}
+.grace_series_left .top{
+	background: #ff706e;
+	width: 171px;
+	height: 210px;
+	float: left;
+}
+
+.grace_series_left .top a img{
+	margin: 0 auto;
 }

@@ -1,8 +1,10 @@
 /*首页导航栏*/
-.header_div{
+
+.header_div {
 	width: 100%;
 	height: 216px;
 }
+
 .navbox {
 	border-bottom: 1px solid #ededed;
 	width: 100%;
@@ -49,7 +51,6 @@
 	width: 540px;
 	height: 35px;
 	margin: 35px 0 0 40px;
-	
 }
 
 .searchbox .searchInput {
@@ -72,101 +73,173 @@
 	border: none;
 	cursor: pointer;
 }
-.search{
+
+.search {
 	width: 540px;
 	height: 35px;
-
 }
-.searchbox .hot_keywords{
+
+.searchbox .hot_keywords {
 	border: 1px solid #FFFEFF;
 }
-.searchbox .hot_keywords ul li{
+
+.searchbox .hot_keywords ul li {
 	float: left;
 	margin: 4px 0;
-	padding:2px 10px;
-	border-right:1px solid #e3e3e3  ;
+	padding: 2px 10px;
+	border-right: 1px solid #e3e3e3;
 	height: 12px;
 	line-height: 12px;
-	
 }
-.logobox .newArrivals{
+
+.logobox .newArrivals {
 	float: right;
 	margin: 20px 50px 0 0;
 }
 
+
 /*菜单导航栏*/
-.menubox{
+
+.menubox {
 	background: #FFFFFF;
 	width: 100%;
 }
-.menubox .menu{
+
+.menubox .menu {
 	width: 1200px;
 	margin: 0 auto;
 }
-.menu{
+
+.menu {
 	background: #FFFFFF;
 	height: 30px;
 	overflow: hidden;
 }
-.menu li a{
+
+.menu li a {
 	display: block;
-    height: 29px;
-    color: #000;
-    font-size: 14px;
-    font-family: 微软雅黑;
-    padding: 0 25px 0 17px;
-    line-height: 29px;
-    letter-spacing: 1px;
+	height: 29px;
+	color: #000;
+	font-size: 14px;
+	font-family: 微软雅黑;
+	padding: 0 25px 0 17px;
+	line-height: 29px;
+	letter-spacing: 1px;
 }
 
-.menu li a:hover{
+.menu li a:hover {
 	color: #e50163;
 }
 
+.menu .menunav_left li {
+	float: left;
+}
 
-.menu .menunav_left li{
-	float:left;
-}
 .menu .menunav_right {
-	float:right;
+	float: right;
 }
-.menu .menunav_right li{
-	float:left;
+
+.menu .menunav_right li {
+	float: left;
 }
+
 
 /*内容部分，轮播图*/
-.content{
+
+.content {
 	width: 100%;
 	height: 430px;
 	background: #e4e4e4;
 }
-.banner ul li{
+
+.banner ul li {
 	display: none;
 	width: 100%;
 	background: url(img/banner1.jpg) no-repeat center top;
 }
-.banner ul li a{
+
+.banner ul li a {
 	width: 1200px;
 	margin: 0 auto;
 	display: block;
 }
 
-.maxbox{
+.maxbox {
 	width: 100%;
 	background: #e4e4e4;
 }
-.bigbox{
+
+.bigbox {
 	width: 1200px;
 	height: 324px;
 	margin: 0 auto;
 	background: #e4e4e4;
 }
-.bigbox .bigbox_left{
+
+.bigbox .bigbox_left {
 	padding-top: 54px;
 	float: left;
 }
-.bigbox .bigbox_right{
+
+.bigbox .bigbox_right {
 	padding-top: 54px;
 	float: right;
 }
 
+.product_list {
+	width: 1200px;
+	height: 800px;
+	border: 1px solid black;
+	margin: 0 auto;
+	background: #FFFEFF;
+}
+
+.product {
+	padding: 0 0 10px 10px;
+	width: 227px;
+	overflow: hidden;
+	display: block;
+	overflow: hidden;
+	float: left;
+	text-decoration: none;
+	background: #FFFFFF;
+}
+
+
+.product .product_introduce {
+	padding: 3px;
+	width: 221px;
+	height: 18px;
+	overflow: hidden;
+	text-align: center;
+	background: #F0F0F0;
+}
+
+.product .product_price {
+	padding: 3px;
+	width: 221px;
+	height: 18px;
+	overflow: hidden;
+	text-align: center;
+	background: #F0F0F0;
+	color: rgb(190, 23, 36);
+	font-size: 24px;
+}
+
+.content .America_show{
+	width: 100%;
+    background: #e4e4e4;
+}
+
+.America_show .America_free{
+	margin: 0 auto;
+	width: 1200px;
+}
+.America_show .hot_sale{
+	margin: 0 auto;
+	width: 1200px;
+}
+.America_show .new_product_week{
+	margin: 0 auto;
+	width: 1200px;
+}

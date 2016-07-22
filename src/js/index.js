@@ -26,7 +26,7 @@ $(function() {
 
 /*轮播图*/
 $(function() {
-	var lists = $(".banner li");
+	var lists = $(".bannerp li");
 	var index=0;
 	var timer=setInterval(foucs,3000);
 	function foucs() {

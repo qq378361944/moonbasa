@@ -172,7 +172,24 @@
 	width: 100%;
 	background: #e4e4e4;
 }
-
+.banner{
+	position: relative;
+}
+.banner .select_banner{
+	position: absolute;
+	width: 175px;
+	height: 20px;
+	right: 30px;
+	bottom: 30px;
+}
+.banner .select_banner li{
+	float: left;
+	width: 16px;
+	height: 16px;
+	margin: 4px;
+	background: url(img/whileball.png) no-repeat center ;
+	display: block;
+}
 .banner ul li {
 	display: none;
 	width: 100%;

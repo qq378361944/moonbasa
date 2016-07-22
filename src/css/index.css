@@ -413,4 +413,23 @@
 	margin: 0 auto;
 	text-align: center;
 }
+.product_lift{
+	width: 1200px;
+	margin: 0 auto;
+	overflow: hidden;
+}
+.young h3{
+	background: url(img/young_title.png);
+	height: 53px;
+	width: 1200px;
+}
 
+.young h3 p{
+	float: left;
+	padding:16px 0 0 50px ;
+}
+/*底部广告图*/
+.ad_picture{
+	width: 1200px;
+	margin: 0 auto;
+}

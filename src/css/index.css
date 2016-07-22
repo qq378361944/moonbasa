@@ -148,8 +148,8 @@
 
 .content {
 	width: 100%;
-	height: 430px;
 	background: #e4e4e4;
+	
 }
 
 .banner ul li {
@@ -433,3 +433,57 @@
 	width: 1200px;
 	margin: 0 auto;
 }
+/*商品列表*/
+.sort_Item{
+	width: 1200px;
+	height: 390px;
+	margin: 0 auto;
+}
+.sort_Item h3{
+	height: 22px;
+    border-bottom: 1px solid #ccc;
+  	background: none;
+    margin-top: 40px;
+}
+.sort_Item h3 span {
+    display: block;
+    width: 128px;
+    padding-top: 10px;
+    margin: 0 auto;
+    font-size: 16px;
+    position: relative;
+    text-align: center;
+    font-weight: 600;
+    background: #e4e4e4;
+}
+.sort_Item ul{
+	width: 100%;
+    padding-top: 52px;
+    overflow: hidden;
+}
+.sort_Item ul li {
+    float: left;
+    width: 150px;
+}
+.sort_Item ul li strong {
+    display: block;
+    width: 100%;
+    text-align: center;
+    color: #000;
+}
+.sort_Item li strong a {
+    color: #000;
+}
+
+.sort_Item ul li a img {
+    display: block;
+    width: 73px;
+    height: 86px;
+    margin: 0 auto;
+    padding: 5px 0;
+}
+.sort_Item ul li p {
+    padding: 0 0 6px 26px;
+    border-right: 1px dashed #ccc;
+}
+

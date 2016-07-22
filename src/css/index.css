@@ -47,26 +47,30 @@
 
 .logininfo .tel {
 	padding-left: 14px;
-	background: url(img/tel.jpg) no-repeat ;
+	background: url(img/tel.jpg) no-repeat;
 }
-.weixin img{
+
+.weixin img {
 	display: none;
 	position: absolute;
 	left: 56px;
 	top: 26px;
 }
-.weibo img{
+
+.weibo img {
 	display: none;
 	position: absolute;
 	left: 110px;
 	top: 26px;
 }
-.tel img{
+
+.tel img {
 	display: none;
 	position: absolute;
 	left: 164px;
 	top: 26px;
 }
+
 .searchbox {
 	float: left;
 	background: url(img/searchimg.jpg);
@@ -172,10 +176,12 @@
 	width: 100%;
 	background: #e4e4e4;
 }
-.banner{
+
+.banner {
 	position: relative;
 }
-.banner .select_banner{
+
+.banner .select_banner {
 	position: absolute;
 	width: 175px;
 	height: 20px;
@@ -183,14 +189,15 @@
 	bottom: 30px;
 }
 
-.banner .select_banner li{
+.banner .select_banner li {
 	float: left;
 	width: 16px;
 	height: 16px;
 	margin: 4px;
-	background: url(img/whileball.png) no-repeat center ;
+	background: url(img/whileball.png) no-repeat center;
 	display: block;
 }
+
 .banner ul li {
 	display: none;
 	width: 100%;
@@ -220,7 +227,85 @@
 	float: left;
 }
 
+.bigbox .bigbox_right_nav {
+	width: 556px;
+	height: 34px;
+	position: absolute;
+	top: 20px;
+}
+
+.bigbox .bigbox_right_nav li {
+	background: #fff;
+	border: none;
+	color: #666;
+	float: left;
+	height: 24px;
+	line-height: 24px;
+	list-style: outside none none;
+	margin-right: 10px;
+	padding: 0;
+	position: relative;
+	text-align: center;
+	width: 100px;
+}
+
+.bigbox .bigbox_right_nav li span {
+	background: url(img/sanjiao.png)no-repeat center;
+	display: block;
+	position: absolute;
+	width: 9px;
+	height: 5px;
+	left: 50px;
+	display: none;
+}
+
+.bigbox .bigbox_right img {
+	float: left;
+}
+
+.bigbox .bigbox_right_nav1 {
+	display: none;
+	width: 950px;
+	height: 262px;
+}
+
+.bigbox .bigbox_right_nav2 {
+	display: block;
+	width: 950px;
+	height: 262px;
+}
+.bigbox .bigbox_right_nav2 .left {
+	height: 262px;
+	width: 430px;
+	float: left;
+}
+
+.bigbox .bigbox_right_nav2 .center {
+	height: 262px;
+	width: 393px;
+	float: left;
+}
+
+.bigbox .bigbox_right_nav2 .right {
+	height: 262px;
+	width: 127px;
+	float: left;
+}
+
+.bigbox .bigbox_right_nav3 {
+	display: none;
+	width: 950px;
+	height: 262px;
+}
+
+.bigbox .bigbox_right_nav4 {
+	display: none;
+	width: 950px;
+	height: 262px;
+}
+
 .bigbox .bigbox_right {
+	position: relative;
 	padding-top: 54px;
 	float: right;
 }

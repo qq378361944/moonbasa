@@ -80,6 +80,7 @@
 }
 .footer .f_infos{
 	width: 1200px;
+	height: 140px;
 	margin: 0 auto;
 }
 .footer .f_infos ul {
@@ -93,3 +94,52 @@
     color: #2f2f2f;
     font-weight: bold;
 }
+.footer .s_info{
+	display: block;
+	padding-top:15px ;
+	height: 40px;
+	background: #FFFFFF;
+}
+.footer .s_info .box{
+	width: 840px;
+	margin: 0 auto;
+}
+.footer .s_info .box img{
+	float: left;
+    padding: 0 16px;
+    border-right: 1px solid #d9d9d9;
+}
+.footer .foot_copyright{
+	color: #797979;
+	padding-top:40px ;
+    padding-bottom: 20px;
+    text-align: center;
+    width: 100%;
+    background: #FFFFFF;
+}
+.footer .foot_copyright .copy_text{
+	width: 980px;
+    margin: auto;
+    position: relative;	
+}
+.footer .foot_otherlog{
+	width: 100%;
+	height: 33px;
+	margin: 0 auto;
+	background: #FFFEFF;
+}
+.footer .foot_otherlog .box{
+	width: 740px;
+	margin: 0 auto;
+}
+.footer .foot_otherlog img{
+	float: left;
+	width: 86px;
+    height: 33px;
+    margin-right: 6px;
+}
+
+
+
+
+

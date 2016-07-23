@@ -1,0 +1,6 @@
+.leftSideBar {
+	position: fixed;
+	left: 0;
+	top: 20%;
+	z-index: 999;
+}

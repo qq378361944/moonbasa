@@ -608,3 +608,10 @@
 	padding: 0 0 6px 26px;
 	border-right: 1px dashed #ccc;
 }
+/*左边漂浮*/
+.leftSideBar {
+	position: fixed;
+	left: -80px;
+	top: 20%;
+	z-index: 999;
+}

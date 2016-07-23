@@ -1,0 +1,102 @@
+/*购物车的头部*/
+.logo{
+	position: absolute;
+}
+.practice{
+	position: absolute;
+	left: 200px;
+	color:#2f2f2f ;
+}
+.practice span {
+    display: inline-block;
+    line-height: 26px;
+    padding: 0 10px 0 12px;
+    color: #747474;
+}
+.loginmax{
+	background: #FFFFFF;
+}
+.cart_status{
+	width: 618px;
+    height: 25px;
+	background: url(img/progressBar.gif);
+	float: right;
+	position: absolute;
+	top:50px;
+	right: 0;
+}
+/*购物车内容*/
+.cart_content{
+	padding-top:100px;
+	width: 100%;
+	background: #FFFFFF;
+}
+.cart_content .cart_body{
+	margin: 0 auto;
+    width: 1200px;
+}
+.cart_body .cart_list_title{
+	width: 1200px;
+    height: 36px;
+    background: #ebebeb;
+}
+.cart_body .cart_list_title.top {
+    margin: 0 auto;
+    width: 1118px;
+}
+
+.cart_body .cart_list_title .top dt {
+    float: left;
+    padding-left: 40px;
+    width: 40px;
+    line-height: 13px;
+}
+.cart_body .cart_list_title .top dd {
+    float: left;
+    height: 36px;
+    color: #414141;
+    font-size: 14px;
+    font-family: "宋体";
+    line-height: 36px;
+}
+.cart_body .cart_list_title .top input {
+    margin: 12px 12px 0;
+    width: 13px;
+    height: 13px;
+}
+.cart_body .cart_list_title .top dd.qb {
+    width: 56px;
+    text-align: left;
+}
+.cart_body .cart_list_title .top dd.sp {
+    width: 440px;
+    text-align: center;
+}
+.cart_body .cart_list_title .top dd.dj {
+    width: 150px;
+    text-align: center;
+}
+.cart_body .cart_list_title .top dd.sl {
+    width: 100px;
+    text-align: center;
+}
+.cart_body .cart_list_title .top dd.jexj {
+    width: 192px;
+    text-align: center;
+}
+.cart_body .cart_list_title .top dd.cz {
+    width: 58px;
+    text-align: left;
+}
+.cart_goods{
+	width: 1198px;
+	padding-top: 9px;
+	border: 1px solid #ebebeb;
+	height: 261px;
+}
+.cart_footer{
+	margin:50px 0 ;
+	width: 1198px;
+	border: 1px solid #ebebeb;
+	height: 300px;
+}

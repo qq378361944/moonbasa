@@ -50,27 +50,6 @@
 	background: url(img/tel.jpg) no-repeat;
 }
 
-.weixin img {
-	display: none;
-	position: absolute;
-	left: 56px;
-	top: 26px;
-}
-
-.weibo img {
-	display: none;
-	position: absolute;
-	left: 110px;
-	top: 26px;
-}
-
-.tel img {
-	display: none;
-	position: absolute;
-	left: 164px;
-	top: 26px;
-}
-
 .searchbox {
 	float: left;
 	background: url(img/searchimg.jpg);

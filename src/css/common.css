@@ -19,6 +19,7 @@
 	width: 1200px;
 	margin: 0 auto;
 	height: 26px;
+	position: relative;
 }
 
 
@@ -142,4 +143,24 @@
 /*------------------login-------------------*/
 
 
+/*微信、微博、手机消失*/
+.weixin img {
+	display: none;
+	position: absolute;
+	left: 56px;
+	top: 26px;
+}
 
+.weibo img {
+	display: none;
+	position: absolute;
+	left: 110px;
+	top: 26px;
+}
+
+.tel img {
+	display: none;
+	position: absolute;
+	left: 164px;
+	top: 26px;
+}

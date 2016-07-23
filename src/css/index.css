@@ -50,39 +50,7 @@
 	background: url(img/tel.jpg) no-repeat;
 }
 
-.searchbox {
-	float: left;
-	background: url(img/searchimg.jpg);
-	width: 540px;
-	height: 35px;
-	margin: 35px 0 0 40px;
-}
 
-.searchbox .searchInput {
-	float: left;
-	width: 410px;
-	height: 30px;
-	padding-left: 10px;
-	line-height: 30px;
-	margin: 3px;
-	color: #b9b9b9;
-	text-indent: 7px;
-	border: none;
-}
-
-.searchbox .searchBtn {
-	float: right;
-	width: 88px;
-	height: 35px;
-	background: none;
-	border: none;
-	cursor: pointer;
-}
-
-.search {
-	width: 540px;
-	height: 35px;
-}
 
 .searchbox .hot_keywords {
 	border: 1px solid #FFFEFF;

@@ -1,9 +1,63 @@
 <!DOCTYPE html>
 <html>
+
 	<head>
 		<meta charset="UTF-8">
 		<title></title>
+		<link rel="stylesheet" type="text/css" href="../css/reset.css"/>
+		<link rel="stylesheet" href="../css/common.css" />
+		<link rel="stylesheet" href="../css/login.css" />
 	</head>
+
 	<body>
+		<!--
+        	作者：lypyyah@163.com
+        	时间：2016-07-23
+        	描述：登录页面
+        -->
+		<!--
+        	作者：lypyyah@163.com
+        	时间：2016-07-23
+        	描述：header
+        -->
+		<div class="header">
+			<a href="#"><img src="../css/img/login_header.jpg" alt /></a>
+		</div>
+		<!--
+        	作者：lypyyah@163.com
+        	时间：2016-07-23
+        	描述：主要部分
+        -->
+		<div class="main">
+			<div class="user_info_left">
+				<img src="../css/img/login1.jpg" alt />
+			</div>
+			<div class="loginbox">
+				<div class="loginbox_top">
+					<span class="login-txt login_active">普通登录<span class="login_bor_1"></span></span>
+					<span class="login-txt_2">无密码登录<span class="login_bor_2"></span></span>
+				</div>
+				<div class="loginbox_content">
+					<form method="post" id="form">
+						<input name="username" id="username" type="text" placeholder="手机号/邮件/会员卡号" /><br/><br/>
+						<input name="userpsd" id="userpsd" type="password" placeholder="密码" />
+						<div class="loginother">
+							<a class="forget_psd" href="#">忘记密码？</a>
+							<a class="login_reg" href="#">注册</a>
+						</div>
+						<input id="loginbtn" type="button" value="立即登录" />
+					</form>
+				</div>
+			</div>
+		</div>
+		<!--
+        	作者：lypyyah@163.com
+        	时间：2016-07-23
+        	描述：footer
+        -->
+		<div class="footer">
+
+		</div>
 	</body>
+
 </html>

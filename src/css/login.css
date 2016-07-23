@@ -14,7 +14,7 @@ body {
 
 .main {
 	width: 1017px;
-	height: 515px;
+	overflow: hidden;
 	margin: 0 auto;
 	background: #FFFFFF;
 }
@@ -31,12 +31,12 @@ body {
 
 .loginbox {
 	width: 400px;
-	height: 400px;
+	min-height: 400px;
+	height: 100%;
 	float: left;
 	overflow: hidden;
 	text-align: left;
 	padding-top: 16px;
-	border: 1px solid black;
 }
 
 .login-txt, .login-txt_2 {
@@ -81,7 +81,7 @@ body {
     width: 364px;
     position: relative;
 }
-#username,#userpsd{
+#username,#userpsd,#email,#tel,#userpsdag{
 	border: 1px solid #c9c9c9;
 	border-radius:5px;
     width: 324px;
@@ -118,4 +118,38 @@ body {
 }
 .login_reg:hover{
 	text-decoration: underline;
+}
+.form_footer{
+	width:365px;
+	height: 57px;
+}
+.form_footer span{
+	float: left;
+	line-height: 57px;
+}
+.form_footer a{
+	float: left;
+	padding-top:10px;
+	padding-left: 10px;
+}
+
+
+/*------------footer----------------*/
+.footer{
+	width: 980px;
+	height: 122px;
+	margin: 0 auto;
+	background: #cecccf;
+}
+.footer .foot_copyright{
+	background: #cecccf;
+	padding-top: 80px;
+}
+
+
+/*-------------验证码---------------*/
+.checkYZM{
+	width: 365px;
+	height: 150px;
+	background: #F2C7C9;
 }

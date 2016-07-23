@@ -263,43 +263,57 @@
 	float: left;
 }
 
+.bigbox .bigbox_right_nav0 {
+	display: none;
+	width: 950px;
+	height: 262px;
+}
+
 .bigbox .bigbox_right_nav1 {
 	display: none;
 	width: 950px;
 	height: 262px;
 }
-
-.bigbox .bigbox_right_nav2 {
-	display: block;
-	width: 950px;
-	height: 262px;
-}
-.bigbox .bigbox_right_nav2 .left {
+.bigbox .bigbox_right_nav1 .left {
 	height: 262px;
 	width: 430px;
 	float: left;
 }
 
-.bigbox .bigbox_right_nav2 .center {
+.bigbox .bigbox_right_nav1 .center {
 	height: 262px;
-	width: 393px;
+	width: 394px;
+	float: left;
+	overflow: hidden;
+}
+
+.bigbox .bigbox_right_nav1 .right {
+	height: 262px;
+	width: 126px;
 	float: left;
 }
 
-.bigbox .bigbox_right_nav2 .right {
-	height: 262px;
-	width: 127px;
-	float: left;
-}
-
-.bigbox .bigbox_right_nav3 {
+.bigbox .bigbox_right_nav2 {
 	display: none;
 	width: 950px;
 	height: 262px;
 }
 
-.bigbox .bigbox_right_nav4 {
-	display: none;
+.bigbox .bigbox_right_nav2 li{
+	margin: 1px;
+	width: 118px;
+    height: 64px;
+    float: left;
+    list-style: none;
+    padding-left: 10px;
+    background: #FFFFFF;
+    position:relative
+}
+.bigbox .bigbox_right_nav2 li img{
+	position: absolute;
+}
+.bigbox .bigbox_right_nav3 {
+	display: block;
 	width: 950px;
 	height: 262px;
 }
@@ -313,7 +327,6 @@
 .product_list {
 	width: 1200px;
 	height: 800px;
-	border: 1px solid black;
 	margin: 0 auto;
 	background: #FFFEFF;
 }

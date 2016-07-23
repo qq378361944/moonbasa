@@ -5,7 +5,14 @@ $(function() {
 	}).on("mouseleave", "img", function() {
 		$(this).attr("src", $(this).attr("src").substring(0, 12) + ".jpg");
 	});
-
+	
+	/*bigbox_right_nav3的hover特效，伪遮罩层*/
+	$(".bigbox_right_nav3").on("mouseover", "img", function() {
+		$(this).attr("src", $(this).attr("src").substring(0,$(this).attr("src").length-4) + "h.jpg");
+	}).on("mouseleave", "img", function() {
+		$(this).attr("src", $(this).attr("src").substring(0,$(this).attr("src").length-5) + ".jpg");
+	});
+	
 	/*微博、手机、微信二维图展现特效*/
 	$(".tel").on("mouseover", function() {
 		$(this).children("img").css("display", "block");
@@ -76,28 +83,49 @@ $(function() {
 		}).next("span").css({
 			"display": "block"
 		});
-	}).on("mouseleave", function() {
-		$(this).css({
+		$(this).siblings().css({
 			"backgroundColor": "white"
 		}).children("a").css({
 			"color": "black"
 		}).next("span").css({
 			"display": "none"
 		});
-	});
+		var idx=$(this).index();
+		for(var i=0;i<4;i++){
+			$(".bigbox_right_nav"+i+"").css({"display":"none"});
+		}
+		$(".bigbox_right_nav"+idx+"").css({"display":"block"});
+	})
 })
 
 /*hover的时候有红色框*/
+/*此次仍有一个BUG，就是速度过快时候不会触发out*/
 $(function() {
-	var alist = $(".bigbox_right_nav2 a");
+	var alist = $(".bigbox_right_nav1 a");
+	var eleWidth,eleHeight;
 	alist.hover(function() {
+		eleWidth=parseInt($(this).children("img").css("width"))-3;
+		eleHeight=parseInt($(this).children("img").css("height"))-3;
 		$(this).children("img").css({
-			"border": "1px solid red"
+			"border": "1px solid red",
+			"width"	:eleWidth,
+			"height":eleHeight
 		});
 	}, function() {
 		$(this).children("img").css({
-			"border": "none"
+			"border": "none",
+			"width"	:eleWidth+3,
+			"height":eleHeight+3
 		});
 	});
-
 });
+
+/*hover的时候图片居中*/
+$(function(){
+	$(".bigbox_right_nav2").on("mouseover","img",function(){
+		$(this).animate({"left":0});
+	}).on("mouseleave","img",function(){
+		$(this).stop().animate({"left":10});
+	});
+})
+

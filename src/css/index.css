@@ -614,4 +614,13 @@
 	left: -80px;
 	top: 20%;
 	z-index: 999;
+	display: none;
+}
+/*右边漂浮*/
+.rightSideBar{
+	position: fixed;
+	right: -5px;
+	top: 20%;
+	z-index: 999;
+	display: none;
 }

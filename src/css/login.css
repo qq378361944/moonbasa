@@ -39,117 +39,164 @@ body {
 	padding-top: 16px;
 }
 
-.login-txt, .login-txt_2 {
-    color: #9f9f9f;
-    display: inline-block;
-    width: 49%;
-    text-align: center;
-    font-size: 14px;
-    padding-bottom: 15px;
-    position: relative;
-}
-.loginbox .login_active {
-    color: #000;
-}
-.login_bor_1 {
-    width: 55px;
-    height: 2px;
-    background: black;
-    position: absolute;
-    display: inline-block;
-    top: 36px;
-    left: 71px;
-}
-.login_bor_2 {
-    width: 72px;
-    height: 2px;
-    background: black;
-    position: absolute;
-    display: inline-block;
-    top: 36px;
-    left: 62px;
-    display: none;
-}
-.login-header span {
-    cursor: pointer;
+.login-txt,
+.login-txt_2 {
+	color: #9f9f9f;
+	display: inline-block;
+	width: 49%;
+	text-align: center;
+	font-size: 14px;
+	padding-bottom: 15px;
+	position: relative;
 }
 
-.loginbox_content{
+.loginbox .login_active {
+	color: #000;
+}
+
+.login_bor_1 {
+	width: 55px;
+	height: 2px;
+	background: black;
+	position: absolute;
+	display: inline-block;
+	top: 36px;
+	left: 71px;
+}
+
+.login_bor_2 {
+	width: 72px;
+	height: 2px;
+	background: black;
+	position: absolute;
+	display: inline-block;
+	top: 36px;
+	left: 62px;
+	display: none;
+}
+
+.login-header span {
+	cursor: pointer;
+}
+
+.loginbox_content {
 	padding: 27px 0 0 34px;
-    border: 1px solid #dcdcdc;
-    height: auto;
-    width: 364px;
-    position: relative;
+	border: 1px solid #dcdcdc;
+	height: auto;
+	width: 364px;
+	position: relative;
 }
-#username,#userpsd,#email,#tel,#userpsdag{
+
+#username,
+#userpsd,
+#email,
+#tel,
+#userpsdag {
 	border: 1px solid #c9c9c9;
-	border-radius:5px;
-    width: 324px;
-    height: 43px;
+	border-radius: 10px;
+	width: 324px;
+	height: 43px;
+	outline: none;
+	text-indent: 35px;
 }
-#loginbtn{
-    width: 324px;
-    height: 43px;
-    overflow: hidden;
-    color: #fff;
-    border: 0;
-    font: 15px/43px '微软雅黑';
-    text-align: center;
-    cursor: pointer;
-    background: #e30165;
-    display: block;
-    line-height: 40px;
-    margin-left: 2px;
-    border-radius: 4px;
+
+#username {
+	background: url(img/login_icon.png)no-repeat -5px -48px;
 }
-.loginother{
+
+#userpsd {
+	background: url(img/login_icon.png)no-repeat -4px -94px;
+}
+
+#loginbtn {
+	width: 324px;
+	height: 43px;
+	overflow: hidden;
+	color: #fff;
+	border: 0;
+	font: 15px/43px '微软雅黑';
+	text-align: center;
+	cursor: pointer;
+	background: #e30165;
+	display: block;
+	line-height: 40px;
+	margin-left: 2px;
+	border-radius: 4px;
+}
+
+.loginother {
 	padding-top: 30px;
 	position: relative;
 	width: 315px;
-	height:20px;
-	margin-left:5px ;
+	height: 20px;
+	margin-left: 5px;
 }
+
 .forget_psd {
-     float: left;
+	float: left;
 }
+
 .login_reg {
-    float: right;
-    color: red;
+	float: right;
+	color: red;
 }
-.login_reg:hover{
+
+.login_reg:hover {
 	text-decoration: underline;
 }
-.form_footer{
-	width:365px;
+
+.form_footer {
+	width: 365px;
 	height: 57px;
 }
-.form_footer span{
+
+.form_footer span {
 	float: left;
 	line-height: 57px;
+	color: #6f6f6f;
 }
-.form_footer a{
+
+.form_footer a {
 	float: left;
-	padding-top:10px;
+	padding-top: 10px;
 	padding-left: 10px;
 }
 
 
 /*------------footer----------------*/
-.footer{
+
+.footer {
 	width: 980px;
 	height: 122px;
 	margin: 0 auto;
 	background: #cecccf;
 }
-.footer .foot_copyright{
+
+.footer .foot_copyright {
 	background: #cecccf;
 	padding-top: 80px;
 }
 
 
 /*-------------验证码---------------*/
-.checkYZM{
+
+.checkYZM {
 	width: 365px;
 	height: 150px;
 	background: #F2C7C9;
+}
+
+
+#loginTip {
+	width: 100%;
+	height: 20px;
+}
+
+#username.error {
+	border: 1px solid red;
+}
+
+.error {
+	background: url(img/login_icon.png) no-repeat 0 4px ;
+	text-indent: 20px;
 }

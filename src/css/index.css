@@ -332,15 +332,20 @@
 }
 
 .America_show .new_product_show li {
-	float: left;
+	margin-right: 10px;
+    margin-bottom: 11px;
+    float: left;
+    height: 371px;
+    width: 390px;
 }
 
 .America_show .good_product_week {
-	width: 1200px;
 	margin: 0 auto;
-	overflow: hidden;
+	width: 1200px;
 }
-
+.new_product_banner{
+	margin:10px 0;
+}
 .good_product_week img {
 	float: left;
 }
@@ -364,6 +369,7 @@
 	float: right;
 	width: 600px;
 	margin-left: 5px;
+	
 }
 
 .popular_product_week .popular_product_week_right li {

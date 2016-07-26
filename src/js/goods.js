@@ -21,14 +21,14 @@ $(function() {
 $(function() {
 	var i = 0;
 	var length = $(".smallPic li").length - 5;
-	$(".bg2 .left").click(function() {
+	$(".bg2 #left").click(function() {
 		console.log(i);
 		if(i < length) {
 			$(".smallPic li")[i].style.display = "none";
 			i++;
 		}
 	});
-	$(".bg2 .right").click(function() {
+	$(".bg2 #right").click(function() {
 		console.log(i);
 		i--;
 		if(i > -1) {

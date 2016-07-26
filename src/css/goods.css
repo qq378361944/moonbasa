@@ -78,7 +78,7 @@
 .goodslist_content_page .content {
 	width: 1200px;
 	margin: 0 auto;
-	height: 1000px;
+	height: 675px;
 }
 
 .content .left {
@@ -111,11 +111,14 @@
 
 .content .center {
 	width: 582px;
-	height: 682px;
+	height: 675px;
 	float: left;
+	border-right: 1px solid #E8E8E8;
 }
 
 .content .right {
+	padding-top: 20px;
+	margin-left: 20px;
 	width: 126px;
 	height: 682px;
 	float: left;
@@ -168,20 +171,28 @@
 	margin: 10px auto;
 }
 
-.pic_ct .bg2 .left {
+#left {
 	float: left;
 	width: 30px;
 	height: 81px;
-	background: url(img/left.png)no-repeat center;
+	background: url(img/slon.png)no-repeat 0 26px;
 	border: none;
 }
 
-.pic_ct .bg2 .right {
+#left:hover {
+	background: url(img/sl.png) no-repeat 0 26px;
+}
+
+#right {
 	float: left;
 	width: 30px;
 	height: 81px;
-	background: url(img/right.png)no-repeat center;
+	background: url(img/sron.png)no-repeat 10px 26px;
 	border: none;
+}
+
+#right:hover {
+	background: url(img/sr.png) no-repeat 10px 26px;
 }
 
 
@@ -454,7 +465,7 @@ span.sc a {
 }
 
 .goods_xq {
-	margin-top:15px ;
+	margin-top: 15px;
 	margin-left: 25px;
 	width: 520px;
 	height: 190px;
@@ -466,7 +477,6 @@ span.sc a {
 	margin-left: 25px;
 	width: 520px;
 	height: 60px;
-
 }
 
 .payment button {
@@ -476,7 +486,7 @@ span.sc a {
 	margin-right: 10px;
 	color: #fff;
 	border: 1px solid #e50065;
-	font-size:20px ;
+	font-size: 20px;
 }
 
 #buynow {
@@ -488,61 +498,73 @@ span.sc a {
 #addcart {
 	background: #e50065;
 }
-.lb{
+
+.lb {
 	overflow: hidden;
-    height: 580px;
+	height: 580px;
 }
 
-.lb li{
+.lb li {
 	margin: 2px 0;
-    float: left;
-    width: 126px;
+	float: left;
+	width: 126px;
 }
-.lb li a{
+
+.lb li a {
 	display: block;
-    width: 126px;
-    height: 154px;
-    text-align: center;
-}
-
-.lb li img{
-	width: 114px;
-    height: 154px;
-    margin: 0 auto;
-}
-
-.right h6{
-	    text-align: center;
-    font-size: 14px;
-    color: #333;
-    font-family: 'Microsoft Yahei';
-    margin-bottom: 8px;
-}
-
-.jz{
+	width: 126px;
+	height: 154px;
 	text-align: center;
-    font-size: 14px;
-    font-family: "微软雅黑";
-    margin: 5px 0 10px;
+}
+
+.lb li img {
+	width: 114px;
+	height: 154px;
+	margin: 0 auto;
+}
+
+.right h6 {
+	text-align: center;
+	font-size: 14px;
+	color: #333;
+	font-family: 'Microsoft Yahei';
+	margin-bottom: 8px;
+}
+
+.jz {
+	text-align: center;
+	font-size: 14px;
+	font-family: "微软雅黑";
+	margin: 5px 0 10px;
 }
 
 #lb_prev {
-    background: url(img/lbu.png) no-repeat 99%;
-    width: 54px;
-    height: 24px;
-    cursor: pointer;
-    float: left;
+	background: url(img/lbu.png) no-repeat 99%;
+	width: 54px;
+	height: 24px;
+	cursor: pointer;
+	float: left;
 }
-#lb_prev:hover{
-	 background: url(img/lbuon.png) no-repeat 99%;
+
+#lb_prev:hover {
+	background: url(img/lbuon.png) no-repeat 99%;
 }
+
 #lb_next {
-    background: url(img/lbd.png) no-repeat 1%;
-    width: 54px;
-    height: 24px;
-    cursor: pointer;
-    float: right;
+	background: url(img/lbd.png) no-repeat 1%;
+	width: 54px;
+	height: 24px;
+	cursor: pointer;
+	float: right;
 }
-#lb_next:hover{
-	 background: url(img/lbdon.png) no-repeat 1%;
+
+#lb_next:hover {
+	background: url(img/lbdon.png) no-repeat 1%;
+}
+
+.main {
+	width: 1222px;
+	height: 1350px;
+	margin: 0 auto;
+	background: #f6f6f6;
 }

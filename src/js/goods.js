@@ -190,31 +190,84 @@ $(function() {
 	});
 });
 /*右边栏hover出框*/
-$(function(){
-	$("#user").on("mouseover",function(){
-		$("#user div").css({"display":"block"});
-	}).on("mouseleave",function(){
-		$("#user div").css({"display":"none"});
+$(function() {
+	$("#user").on("mouseover", function() {
+		$("#user div").css({
+			"display": "block"
+		});
+	}).on("mouseleave", function() {
+		$("#user div").css({
+			"display": "none"
+		});
 	});
-	$("#right_cart").on("mouseover",function(){
-		$("#right_cart div").css({"display":"block"});
-	}).on("mouseleave",function(){
-		$("#right_cart div").css({"display":"none"});
+	$("#right_cart").on("mouseover", function() {
+		$("#right_cart div").css({
+			"display": "block"
+		});
+	}).on("mouseleave", function() {
+		$("#right_cart div").css({
+			"display": "none"
+		});
 	});
 });
 
 /*加入购物车*/
-$(function(){
-	$("#addcart").click(function(){
-		$(".jiaru").css("display","block");
+$(function() {
+	$("#addcart").click(function() {
+		$(".jiaru").css("display", "block");
 	});
-	$(".btn-close").click(function(){
-		$(".jiaru").css("display","none");
+	$(".btn-close").click(function() {
+		$(".jiaru").css("display", "none");
 	});
-	$(".jixumai").click(function(){
-		$(".jiaru").css("display","none");
+	$(".jixumai").click(function() {
+		$(".jiaru").css("display", "none");
 	});
-	$(".qujiesuan").click(function(){
-		window.location.href="shopcart.html";
+	$(".qujiesuan").click(function() {
+		window.location.href = "shopcart.html";
 	});
+});
+/*商品信息存入cookie*/
+$(function() {
+
+	$("#buynow").click(function() {
+		/*var goodsnum=$(".share p").text().substring(5);
+		var goodsname=$(".center h2").text();
+		var money=$(".price b").text();
+		var color=$(".color div.on").text();
+		var size=$(".color div.on").closest("a").next().children(".on").children("span").text();
+		var num=$(".num b").text();
+		var imgsrc=$(".bg img").attr("src");*/
+		/*console.log(goodsNum);
+		console.log(goodsname);
+		console.log(money);
+		console.log(color);
+		console.log(size);
+		console.log(num);
+		console.log(imgsrc);*/
+		/*if(size==""){
+			alert("你的尺码没选哦");
+		}*/
+		// 创建一个空对象，用来保存商品信息
+		var value={};
+		value.goodsid=$(".share p").text().substring(5);
+		value.goodsname = $(".center h2").text();
+		value.money = $(".price b").text();
+		value.color = $(".color div.on").text();
+		value.size = $(".color div.on").closest("a").next().children(".on").children("span").text();
+		value.num = $(".num b").text();
+		value.imgsrc = $(".bg img").attr("src");
+		var shopping=JSON.stringify(value);
+		console.log(shopping);
+		// 写入商品数量
+		/*$.cookie("value",value);
+		$.cookie("goodsNum",goodsNum, { expires: 7, path: '/' });
+		$.cookie("goodsname",goodsname, { expires: 7, path: '/' });
+		$.cookie("money",money, { expires: 7, path: '/' });
+		$.cookie("color",color, { expires: 7, path: '/' });
+		$.cookie("size",size, { expires: 7, path: '/' });
+		$.cookie("num",num, { expires: 7, path: '/' });
+		$.cookie("imgsrc",imgsrc, { expires: 7, path: '/' });*/
+		$.cookie("shopping",shopping);
+	});
+
 });

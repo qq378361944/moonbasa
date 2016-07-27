@@ -48,6 +48,10 @@ body {
 	font-size: 14px;
 	padding-bottom: 15px;
 	position: relative;
+	
+}
+.login-txt a{
+	color: #9f9f9f;
 }
 
 .loginbox .login_active {

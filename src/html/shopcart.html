@@ -9,6 +9,8 @@
 		<link rel="stylesheet" type="text/css" href="../css/shopcart.css" />
 		<script type="text/javascript" src="../js/jquery-1.12.0.js"></script>
 		<script type="text/javascript" src="../js/index.js"></script>
+		<script src="../js/cart.js"></script>
+		<script src="../js/jquery.cookie.js"></script>
 	</head>
 
 	<body>
@@ -73,7 +75,21 @@
                 	描述：商品列表
                 -->
 				<div class="cart_goods">
-
+					<div class="title">
+						<span class="shangjia">以下商品由 梦芭莎 发货</span>
+						<span class="yunfei">免配送费</span>
+					</div>
+					<div class="shopping">
+						<ul>
+							<li></li>
+							<li id="imgsrc"></li>
+							<li id="goods"></li>
+							<li id="money"></li>
+							<li id="num"><a class="min">-</a><input type="text" class="num" ><a class="plus">+</a></li>
+							<li id="hj"></li>
+							<li id="opear"></li>
+						</ul>
+					</div>
 				</div>
 				<!--
                 	作者：lypyyah@163.com

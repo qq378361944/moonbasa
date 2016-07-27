@@ -48,6 +48,10 @@ body {
 	font-size: 14px;
 	padding-bottom: 15px;
 	position: relative;
+	
+}
+.login-txt a{
+	color: #9f9f9f;
 }
 
 .loginbox .login_active {
@@ -100,11 +104,11 @@ body {
 	text-indent: 35px;
 }
 
-#username {
+#email,#tel,#username {
 	background: url(img/login_icon.png)no-repeat -5px -48px;
 }
 
-#userpsd {
+#userpsdag,#userpsd {
 	background: url(img/login_icon.png)no-repeat -4px -94px;
 }
 
@@ -188,14 +192,13 @@ body {
 
 
 #loginTip {
+	position: relative;
 	width: 100%;
 	height: 30px;
 }
 
-#username.error {
-	border: 1px solid red;
-}
 
+<<<<<<< HEAD
 label.error {
 	background: url(img/login_icon.png) no-repeat 0 8px ;
 	text-indent: 20px;
@@ -203,3 +206,24 @@ label.error {
 	display: block;
 	line-height: 30px;
 }
+=======
+
+label.error {
+	background: url(img/login_icon.png) no-repeat 0 4px ;
+	text-indent: 20px;
+	display: block;
+	color: #e60065;
+	margin-left:2px ;
+}
+
+.ok{
+    width: 30px;
+    height: 18px;
+    background: url(img/l_090.jpg)no-repeat!important;
+    display: inline-block;
+    vertical-align: top;
+    position: absolute;
+    right: 40px;
+	top:-30px
+}
+>>>>>>> refs/remotes/origin/master

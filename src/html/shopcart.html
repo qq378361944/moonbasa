@@ -9,6 +9,8 @@
 		<link rel="stylesheet" type="text/css" href="../css/shopcart.css" />
 		<script type="text/javascript" src="../js/jquery-1.12.0.js"></script>
 		<script type="text/javascript" src="../js/index.js"></script>
+		<script src="../js/cart.js"></script>
+		<script src="../js/jquery.cookie.js"></script>
 	</head>
 
 	<body>
@@ -21,15 +23,15 @@
 			<div class="loginmax">
 				<div class="loginbox">
 					<div class="logo">
-						<a href="#"><img src="../css/img/shopcartlogo.jpg" alt/></a>
+						<a href="../index.html"><img src="../css/img/shopcartlogo.jpg" alt/></a>
 					</div>
 					<div class="practice">
 						<span>9年品质保证</span>|<span>7天无条件退换货</span>|</div>
 					<div class="logininfo_outdiv">
 						<div class="logininfo">
-							<a href="#">登录</a>
+							<a href="login.html">登录</a>
 							<span>|</span>
-							<a href="#">注册</a>
+							<a href="regitst.html">注册</a>
 							<span>|</span>
 							<a href="#" class="weixin">微信<img src="../img/weixin.jpg" alt></a>
 							<span>|</span>
@@ -73,7 +75,28 @@
                 	描述：商品列表
                 -->
 				<div class="cart_goods">
-
+					<div class="title">
+						<span class="shangjia">以下商品由 梦芭莎 发货</span>
+						<span class="yunfei">免配送费</span>
+					</div>
+					<div class="shopping">
+						<ul>
+							<li id="check"><input type="checkbox" checked="checked"></li>
+							<li id="imgsrc"></li>
+							<li id="goods"></li>
+							<li id="money"></li>
+							<li id="num"><a class="min">-</a><input type="text" class="num" ><a class="plus">+</a></li>
+							<li id="hj"></li>
+							<li id="opear"><span class="xiugai">修改</span><span class="yichu">移除</span></li>
+						</ul>
+					</div>
+					<div class="fukuan">
+						<img src="../img/saoyisao.png" />
+						<div class="fukuanhj">
+							<div class="zs">商品数量总计：<span class="pics">2件</span> <span class="zj"> 折后商品金额总计</span>: <span class="rmb">￥ </span><span class="howmuch">258</span></div>
+							<button class="js">去结算</button>
+						</div>
+					</div>
 				</div>
 				<!--
                 	作者：lypyyah@163.com
@@ -81,6 +104,10 @@
                 	描述：购物车底部
                 -->
 				<div class="cart_footer">
+					<h3>热销商品</h3>
+					<a href="goods.html"><img src="../img/group1.png" class="on"/>
+					<img src="../img/group2.png"/>
+					<button>换一组</button></a>
 				</div>
 			</div>
 			<!--

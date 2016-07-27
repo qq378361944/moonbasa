@@ -7,6 +7,10 @@
 		<link rel="stylesheet" type="text/css" href="../css/reset.css"/>
 		<link rel="stylesheet" href="../css/common.css" />
 		<link rel="stylesheet" href="../css/login.css" />
+		<script type="text/javascript" src="../js/jquery-1.12.0.js" ></script>
+		<script type="text/javascript" src="../js/regitst.js" ></script>
+		<script type="text/javascript" src="../dist/jquery-validation-1.14.0/jquery.validate.min.js" ></script>
+		<script src="../dist/jquery-validation-1.14.0/messages_zh.min.js" type="text/javascript" charset="utf-8"></script>
 	</head>
 
 	<body>
@@ -34,18 +38,19 @@
 			</div>
 			<div class="loginbox">
 				<div class="loginbox_top">
-					<span class="login-txt">普通登录<span></span></span>
+					<span class="login-txt"><a href="login.html">登录</a><span></span></span>
 					<span class="login-txt_2 login_active">注册<span class="login_bor_1"></span></span>
 				</div>
 				<div class="loginbox_content">
 					<form method="post" id="form">
-						<input name="email" id="email" type="text" placeholder="邮箱" /><br/><br/>
-						<input name="tel" id="tel" type="text" placeholder="手机号" /><br/><br/>
-						<input name="userpsd" id="userpsd" type="text" placeholder="密码" /><br/><br/>
+						<input name="email" id="email" type="text" placeholder="邮箱" />
+						<div id="loginTip"></div>
+						<input name="tel" id="tel" type="text" placeholder="手机号" />
+						<div id="loginTip"></div>
+						<input name="userpsd" id="userpsd" type="text" placeholder="密码" />
+						<div id="loginTip"></div>
 						<input name="userpsdag" id="userpsdag" type="password" placeholder="确定密码" />
-						<div class="checkYZM">
-							
-						</div>
+						<div id="loginTip"></div>
 						<input id="loginbtn" type="button" value="同意以下协议，提交" />
 						<div class="form_footer">
 							<input type="checkbox" checked="true"/>同意梦芭莎注册条款

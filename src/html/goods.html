@@ -9,6 +9,7 @@
 		<link rel="stylesheet" type="text/css" href="../css/goods.css" />
 		<script type="text/javascript" src="../js/jquery-1.12.0.js"></script>
 		<script type="text/javascript" src="../js/goods.js"></script>
+
 	</head>
 
 	<body>
@@ -17,9 +18,19 @@
         	时间：2016-07-20
         	描述：头部
         -->
+        <div class="jiaru">
+        	<img src="../img/jiarugouwuce.jpg"/>
+        	<a class="btn-close" href="#"></a>
+        	<a class="jixumai"  href="#"></a>
+        	<a class="qujiesuan"  href="#"></a>
+        </div>
 		<div class="header_div">
 			<div class="loginmax">
 				<div class="loginbox">
+					<div class="goodsimg">
+						<a href="../index.html">梦芭莎首页</a>
+						<span>100%正品&nbsp;9年保证</span>
+					</div>
 					<div class="logininfo_outdiv">
 						<div class="cart">
 							<a href="#">购物车</a>
@@ -65,16 +76,42 @@
         	描述：
         -->
 		<div class="goodslist_content">
+			<div class="right_item">
+				<ul>
+					<li id="user">
+						<a href="#"><img src="../css/img/right_item.png" /></a>
+						<div class="user"><img src="../img/right123.jpg"/></div>
+					</li>
+					<li id="right_cart">
+						<a href="#"><img src="../css/img/right_item1.png" /><span>购物车</span>
+							<div class="right_cart"></div>
+						</a>
+					</li>
+					<li id="sc">
+						<a href="#"><img src="../css/img/right_item2.png" /></a>
+					</li>
+					<li id="tel">
+						<a href="#"><img src="../css/img/right_item3.png" /></a>
+					</li>
+					<li>
+						<a href="#"><img src="../css/img/right_item4.png" /></a>
+					</li>
+				</ul>
+			</div>
 			<div class="goodslist_content_title">
 
 			</div>
 			<div class="goodslist_content_nav">
 				<ul>
 					<li>
-						<a href="../index.html">首页HOME</a>
+						<a href="../index.html">首页
+							<font>HOME</font>
+						</a>
 					</li>
 					<li>
-						<a href="#">当季新品NEW</a>
+						<a href="#">当季新品
+							<font>NEW</font>
+						</a>
 					</li>
 					<li>
 						<a href="#">连衣裙</a>
@@ -89,7 +126,9 @@
 						<a href="#">裤子</a>
 					</li>
 					<li class="hot_sale">
-						<a href="#">促销SALE</a>
+						<a href="#">折扣促销
+							<font>SALE</font>
+						</a>
 					</li>
 				</ul>
 			</div>
@@ -104,7 +143,9 @@
 						</div>
 						<div class="pic_ct">
 							<div class="bg">
-								<img src="../img/41.jpg" />
+								<img src="../img/41.jpg" jqimg="../img/41.jpg" />
+								<div id="zhezao"></div>
+								<span id="fdj"></span>
 							</div>
 							<div class="bg2">
 								<div id="left"></div>
@@ -177,11 +218,50 @@
 						</ul>
 					</div>
 					<div class="goods_xq">
-						<div class="color">
-
+						<ul class="xq_left">
+							<li style="height: 60px;">颜色</li>
+							<li>尺码</li>
+							<li>数量</li>
+						</ul>
+						<ul class="color">
+							<li>
+								<a href="#">
+									<div class="on"><img src="../img/a.jpg" /><b>灰白色</b></div>
+								</a>
+								<ul class="size on">
+									<li class="on"><span>M</span></li>
+									<li><span>L</span></li>
+								</ul>
+							</li>
+							<li>
+								<a href="#">
+									<div><img src="../img/b.jpg" /><b>橙白色</b></div>
+								</a>
+								<ul class="size">
+									<li class="on"><span>S</span></li>
+									<li><span>M</span></li>
+									<li><span>L</span></li>
+									<li><span>XL</span></li>
+								</ul>
+							</li>
+							<li>
+								<a href="#">
+									<div><img src="../img/c.jpg" /><b>蓝白条</b></div>
+								</a>
+								<ul class="size">
+									<li class="on"><span>S</span></li>
+									<li><span>M</span></li>
+									<li><span>L</span></li>
+								</ul>
+							</li>
+						</ul>
+						<div class="num">
+							<p>
+								<b>1</b>
+								<i id="add"></i>
+								<i id="sub"></i>
+							</p>
 						</div>
-						<div class="size"></div>
-						<div class="num"></div>
 					</div>
 					<div class="payment">
 						<button id="buynow">立即购买</button> &nbsp;
@@ -236,7 +316,31 @@
 					</div>
 				</div>
 			</div>
-			<div class="main"></div>
+			<div class="commentbox">
+				<div class="commentleft">
+					<a href="#"><img src="../img/49.jpg" /></a>
+					<a href="#"><img src="../img/50.jpg" /></a>
+					<a href="#"><img src="../img/51.jpg" /></a>
+					<a href="#"><img src="../img/52.jpg" /></a>
+					<a href="#"><img src="../img/53.jpg" /></a>
+					<a href="#"><img src="../img/54.jpg" /></a>
+					<a href="#"><img src="../img/52.jpg" /></a>
+				</div>
+				<div class="commentright">
+					<h2>
+						<a href="#" class="on">商品详情</a>
+						<a href="#">评论(76)</a>
+						<a href="#">如何支付</a>
+						<a href="#">7天无条件退换货</a>
+					</h2>
+					<ul>
+						<li style="display: block;"><img src="../img/goodsxq.png" /></li>
+						<li><img src="../img/comment.png" /></li>
+						<li><img src="../img/fkfs.png" /></li>
+						<li><img src="../img/sffs.png" /></li>
+					</ul>
+				</div>
+			</div>
 
 		</div>
 		</div>

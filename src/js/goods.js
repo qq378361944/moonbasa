@@ -1,3 +1,21 @@
+/*微博、手机、微信二维图展现特效*/
+$(function() {
+	$(".tel").on("mouseover", function() {
+		$(this).children("img").css("display", "block");
+	}).on("mouseleave", function() {
+		$(this).children("img").css("display", "none");
+	});
+	$(".weibo").on("mouseover", function() {
+		$(this).children("img").css("display", "block");
+	}).on("mouseleave", function() {
+		$(this).children("img").css("display", "none");
+	});
+	$(".weixin").on("mouseover", function() {
+		$(this).children("img").css("display", "block");
+	}).on("mouseleave", function() {
+		$(this).children("img").css("display", "none");
+	});
+});
 /*分享小图标*/
 $(function() {
 	$(".this_share").hover(function() {
@@ -33,69 +51,170 @@ $(function() {
 		i--;
 		if(i > -1) {
 			$(".smallPic li")[i].style.display = "block";
-		}else if(i=-1){
-			i=0;
+		} else if(i = -1) {
+			i = 0;
 		}
 	});
 });
 
 /*收起*/
-$(function(){
-	$(".up").click(function(){
-		$(".youhui")[0].style.border="none";
-		$(".youhui")[0].style.backgroundColor="#f4f4f4";
-		$(".youhui")[0].style.width="500px";
-		for (var i=0;i<$(".youhui li").length;i++) {
-			$(".youhui li")[i].style.border="none";
-			if(i!=1){
-				$(".youhui li")[i].style.display="none";
+$(function() {
+	$(".up").click(function() {
+		$(".youhui")[0].style.border = "none";
+		$(".youhui")[0].style.backgroundColor = "#f4f4f4";
+		$(".youhui")[0].style.width = "500px";
+		for(var i = 0; i < $(".youhui li").length; i++) {
+			$(".youhui li")[i].style.border = "none";
+			if(i != 1) {
+				$(".youhui li")[i].style.display = "none";
 			}
 		}
-		$(".down").css("display","block");
+		$(".down").css("display", "block");
 		return false;
 	});
 });
 /*下来*/
-$(function(){
-	$(".down").click(function(){
-		$(".youhui li").css({"display":"block","border-bottom":"1px dotted #E8E8E8"});
-		$(".youhui").css({"background-color":"#fff","padding":"5px 10px 10px","border":"1px solid #e3e3e3","width":"498px"});
-		$(this).css("display","none");
+$(function() {
+	$(".down").click(function() {
+		$(".youhui li").css({
+			"display": "block",
+			"border-bottom": "1px dotted #E8E8E8"
+		});
+		$(".youhui").css({
+			"background-color": "#fff",
+			"padding": "5px 10px 10px",
+			"border": "1px solid #e3e3e3",
+			"width": "498px"
+		});
+		$(this).css("display", "none");
 		return false;
 	});
 });
 /*二维码*/
-$(function(){
-	$(".erweima").on("mouseover","img",function(){
-		$(this).attr("src",$(this).attr("src").substring(0,$(this).attr("src").length-5)+"2.gif");
-	}).on("mouseleave","img",function(){
-		$(this).attr("src",$(this).attr("src").substring(0,$(this).attr("src").length-5)+"1.gif");
-	}).on("click","img",function(){
+$(function() {
+	$(".erweima").on("mouseover", "img", function() {
+		$(this).attr("src", $(this).attr("src").substring(0, $(this).attr("src").length - 5) + "2.gif");
+	}).on("mouseleave", "img", function() {
+		$(this).attr("src", $(this).attr("src").substring(0, $(this).attr("src").length - 5) + "1.gif");
+	}).on("click", "img", function() {
 		$(".telerwei").slideDown();
 	});
 });
 /*关闭*/
-$(function(){
-	$(".close").click(function(){
+$(function() {
+	$(".close").click(function() {
 		$(".telerwei").slideUp();
 	});
 });
 /*lb*/
-$(function(){
-	var lilength=parseInt($(".lb li").length/3);
-	var a=0;
-	$("#lb_next").click(function(){
+$(function() {
+	var lilength = parseInt($(".lb li").length / 3);
+	var a = 0;
+	$("#lb_next").click(function() {
 		a++;
 		console.log(a);
-		if(a<lilength){
-			$(".lb li:lt("+a*3+")").slideUp(600);
-		}else{
+		if(a < lilength) {
+			$(".lb li:lt(" + a * 3 + ")").slideUp(600);
+		} else {
 			a--;
 		}
 	});
-	$("#lb_prev").click(function(){
+	$("#lb_prev").click(function() {
 		a--;
-		$(".lb li:gt("+(3*a)+")").slideDown();
-		
+		$(".lb li:gt(" + (3 * a) + ")").slideDown();
+
+	});
+});
+
+/*评论页面的on*/
+$(function() {
+	$(".commentright h2").on("click", "a", function() {
+		var idx = $(this).index();
+		$(this).addClass("on").siblings().removeClass("on");
+		$(this).parent().next().children("li").eq(idx).css("display", "block").siblings().css("display", "none");
+		return false;
+	});
+});
+
+/*放大镜*/
+$(function() {
+	$(".bg img").on("mousemove", function(e) {
+		var mouseX = e.offsetX;
+		var mouseY = e.offsetY;
+		$("#zhezao").css({
+			"display": "block",
+			"left": mouseX + "px",
+			"top": mouseY + "px"
+		});
+		var simgh = parseInt($(this).css("height"));
+		var img = new Image();
+		img.src = $(this).attr("src");
+		var beishu = img.height / simgh;
+		$("#fdj").css({
+			"display": "block",
+			"background-position-x": -mouseX * beishu + "px",
+			"background-position-y": -e.offsetY * beishu + "px"
+		});
+	}).on("mouseleave", function() {
+		$("#zhezao,#fdj").css({
+			"display": "none"
+		});
+	});
+});
+
+/*选择颜色出现不尺寸*/
+$(function() {
+	$(".color div").on("click", function() {
+		$(".size").removeClass("on");
+		$(".color div").removeClass("on");
+		$(this).addClass("on").parent().next().addClass("on");
+		return false;
+	});
+	$(".size").on("click", "li", function() {
+		$(".size li").removeClass("on");
+		$(this).addClass("on");
+	});
+});
+
+/*数量增减*/
+$(function() {
+	var num = $(".num b").text();
+	$("#add").click(function() {
+		num++;
+		$(".num b").text(num);
+	});
+	$("#sub").click(function() {
+		if(num-- > 1) {
+			$(".num b").text(num);
+		}
+	});
+});
+/*右边栏hover出框*/
+$(function(){
+	$("#user").on("mouseover",function(){
+		$("#user div").css({"display":"block"});
+	}).on("mouseleave",function(){
+		$("#user div").css({"display":"none"});
+	});
+	$("#right_cart").on("mouseover",function(){
+		$("#right_cart div").css({"display":"block"});
+	}).on("mouseleave",function(){
+		$("#right_cart div").css({"display":"none"});
+	});
+});
+
+/*加入购物车*/
+$(function(){
+	$("#addcart").click(function(){
+		$(".jiaru").css("display","block");
+	});
+	$(".btn-close").click(function(){
+		$(".jiaru").css("display","none");
+	});
+	$(".jixumai").click(function(){
+		$(".jiaru").css("display","none");
+	});
+	$(".qujiesuan").click(function(){
+		window.location.href="shopcart.html";
 	});
 });

@@ -37,4 +37,23 @@ $(function() {
         }
         
 	});
+	
+	$("#loginbtn").click(function(){
+		$.ajax({
+			type:"get",
+			url:"http://localhost:8080/userCheck.jsp",
+			data:{"username":$("#username").val(),"psd":$("#userpsd").val()},
+			success:function(msg){
+				if(msg=="true"){
+					$.cookie("user",$("#username").val(),{ path: "/"});
+					return true;
+				}else{
+					alert(msg);
+					return false;
+				}
+			}
+		});
+		
+	});
+	
 });

@@ -162,3 +162,10 @@ $(function(){
 		$(this).css("background-color","#090909").children("dd").css("display","none");
 	});
 });
+
+/*登录转过来有用户名*/
+$(function(){
+	if($.cookie("user")!=undefined){
+	$(".logininfo").children("a").eq(1);
+	}
+});

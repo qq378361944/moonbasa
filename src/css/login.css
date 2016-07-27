@@ -189,14 +189,17 @@ body {
 
 #loginTip {
 	width: 100%;
-	height: 20px;
+	height: 30px;
 }
 
 #username.error {
 	border: 1px solid red;
 }
 
-.error {
-	background: url(img/login_icon.png) no-repeat 0 4px ;
+label.error {
+	background: url(img/login_icon.png) no-repeat 0 8px ;
 	text-indent: 20px;
+	height: 30px;
+	display: block;
+	line-height: 30px;
 }

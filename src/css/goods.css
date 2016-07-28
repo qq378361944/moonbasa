@@ -162,8 +162,7 @@
 .this_page {
 	margin-top: 40px;
 	width: 300px;
-	margin-left: ;
-	20px;
+	margin-left:20px;
 }
 
 .this_page a {
@@ -469,7 +468,7 @@ span.sc a {
 }
 
 .youhui li {
-	background: ##f4f4f4;
+	background: #f4f4f4;
 	height: 32px;
 	border: none;
 	line-height: 32px;
@@ -674,7 +673,6 @@ span.sc a {
 
 #buynow {
 	color: #E40165;
-	1px solid #E40165;
 	background: #FFFFFF;
 }
 
@@ -810,67 +808,77 @@ span.sc a {
 	position: fixed;
 	right: 0;
 }
-.right_item ul{
-	margin-top:150px ;
+
+.right_item ul {
+	margin-top: 150px;
 }
+
 .right_item li {
-	margin:10px 0 ;
+	margin: 10px 0;
 	width: 100%;
 	height: 36px;
 	position: relative;
 }
-#right_cart{
+
+#right_cart {
 	height: 120px;
 }
-#right_cart span{
+
+#right_cart span {
 	color: #FFFFFF;
-	font-size:20px ;
+	font-size: 20px;
 	font-weight: 100;
 	text-align: center;
 	display: block;
 }
+
 .right_item li:hover {
 	background: #C00155;
 }
 
 .right_item li img {
 	padding: 10px 0;
-	margin:0 auto;
+	margin: 0 auto;
 }
 
-.right_item li div{
+.right_item li div {
 	width: 298px;
 	height: 239px;
 	background: #FFFFFF;
 	position: absolute;
 	right: 36px;
-	top:0 ;
+	top: 0;
 	display: none;
 }
-.user img{
+
+.user img {
 	width: 298px;
 	height: 239px;
 }
+
+
 /*加入购物车*/
-.jiaru{
+
+.jiaru {
 	position: absolute;
 	z-index: 3;
 	top: 200px;
 	left: 100px;
 	display: none;
 }
-#supernum{
+
+#supernum {
 	width: 16px;
-	height: 20px ;
+	height: 20px;
 	background: #FFFFFF;
 	position: relative;
 	right: -423px;
 	top: -621px;
 	color: red;
 	text-align: center;
-
 }
-.btn-close{
+
+.btn-close {
 	position: relative;
 	width: 30px;
 	height: 30px;
@@ -878,7 +886,8 @@ span.sc a {
 	top: -621px;
 	display: block;
 }
-.jixumai{
+
+.jixumai {
 	position: relative;
 	display: block;
 	width: 120px;
@@ -886,7 +895,8 @@ span.sc a {
 	right: -310px;
 	top: -471px;
 }
-.qujiesuan{
+
+.qujiesuan {
 	position: relative;
 	display: block;
 	width: 120px;

@@ -1,0 +1,191 @@
+/*------------------index----------------------------*/
+/*头部的样式*/
+
+.header_div {
+  background-color: #F6F6F6;
+  margin: 0 auto;
+  width: 100%;
+}
+
+/*头部登录盒子的样式*/
+
+.loginmax {
+  border: 1px solid #ededed;
+}
+
+.loginbox {
+  width: 1200px;
+  margin: 0 auto;
+  height: 26px;
+  position: relative;
+  .logininfo_outdiv {
+    width: auto;
+    height: 26px;
+    position: relative;
+    float: right;
+    z-index: 11;
+    padding-right: 50px;
+  }
+}
+
+/*盒子里面右边类nav的具体样式*/
+
+/*购物车cart样式*/
+
+.cart {
+  position: relative;
+  float: right;
+  padding: 0 17px 0 8px;
+  background: url(img/cart.jpg) no-repeat right;
+  a {
+    line-height: 26px;
+  }
+}
+
+/*登录导航栏样式*/
+
+.loginbox {
+  .logininfo {
+    float: right;
+    color: #666;
+    text-align: right;
+    padding-top: 2px;
+    a {
+      color: #666;
+      padding: 0 8px;
+    }
+  }
+  span {
+    color: #d4d4d4;
+  }
+  a:hover {
+    color: #e50056;
+  }
+}
+
+/*footer*/
+
+.footer {
+  width: 100%;
+  background: #ececec;
+  overflow: hidden;
+  .f_infos {
+    width: 1200px;
+    height: 140px;
+    margin: 0 auto;
+    ul {
+      float: left;
+      padding-bottom: 0;
+      padding-left: 32px;
+      padding-right: 32px;
+      padding-top: 0;
+      li.lititle a {
+        color: #2f2f2f;
+        font-weight: bold;
+      }
+    }
+  }
+  .s_info {
+    display: block;
+    padding-top: 15px;
+    height: 40px;
+    background: #FFFFFF;
+    .box {
+      width: 840px;
+      margin: 0 auto;
+      img {
+        float: left;
+        padding: 0 16px;
+        border-right: 1px solid #d9d9d9;
+      }
+    }
+  }
+  .foot_copyright {
+    color: #797979;
+    padding-top: 40px;
+    padding-bottom: 20px;
+    text-align: center;
+    width: 100%;
+    background: #FFFFFF;
+    .copy_text {
+      width: 980px;
+      margin: auto;
+      position: relative;
+    }
+  }
+  .foot_otherlog {
+    width: 100%;
+    height: 33px;
+    margin: 0 auto;
+    background: #FFFEFF;
+    .box {
+      width: 740px;
+      margin: 0 auto;
+    }
+    img {
+      float: left;
+      width: 86px;
+      height: 33px;
+      margin-right: 6px;
+    }
+  }
+}
+
+/*------------------login-------------------*/
+
+/*微信、微博、手机消失*/
+
+.weixin img {
+  display: none;
+  position: absolute;
+  left: 56px;
+  top: 26px;
+}
+
+.weibo img {
+  display: none;
+  position: absolute;
+  left: 110px;
+  top: 26px;
+}
+
+.tel img {
+  display: none;
+  position: absolute;
+  left: 164px;
+  top: 26px;
+}
+
+/*-------搜索框----*/
+
+.searchbox {
+  float: left;
+  background: url(img/searchimg.jpg);
+  width: 540px;
+  height: 35px;
+  margin: 35px 0 0 40px;
+  .searchInput {
+    float: left;
+    width: 410px;
+    height: 30px;
+    padding-left: 10px;
+    line-height: 30px;
+    margin: 3px;
+    color: #b9b9b9;
+    text-indent: 7px;
+    border: none;
+  }
+  .searchBtn {
+    float: right;
+    width: 88px;
+    height: 35px;
+    background: none;
+    border: none;
+    cursor: pointer;
+  }
+}
+
+.search {
+  width: 540px;
+  height: 35px;
+}

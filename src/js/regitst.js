@@ -69,7 +69,7 @@ $(function(){
 		});
 	});
 	
-	$("#loginbtn").click(function(){
+	/*$("#loginbtn").click(function(){
 		window.location.href="login.html"
-	});
+	});*/
 });

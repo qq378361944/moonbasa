@@ -1,0 +1,209 @@
+body {
+  color: #555;
+  font-size: 12px;
+  font-family: "ËÎÌå";
+  line-height: 22px;
+  background: #cecccf;
+}
+
+.header {
+  width: 1017px;
+  height: 117px;
+  margin: 0 auto;
+}
+
+.main {
+  width: 1017px;
+  overflow: hidden;
+  margin: 0 auto;
+  background: #FFFFFF;
+}
+
+.user_info_left {
+  width: 505px;
+  height: 508px;
+  float: left;
+  img {
+    margin: 23px 18px 20px 84px;
+  }
+}
+
+.loginbox {
+  width: 400px;
+  min-height: 400px;
+  height: 100%;
+  float: left;
+  overflow: hidden;
+  text-align: left;
+  padding-top: 16px;
+}
+
+.login-txt, .login-txt_2 {
+  color: #9f9f9f;
+  display: inline-block;
+  width: 49%;
+  text-align: center;
+  font-size: 14px;
+  padding-bottom: 15px;
+  position: relative;
+}
+
+.login-txt a {
+  color: #9f9f9f;
+}
+
+.loginbox .login_active {
+  color: #000;
+}
+
+.login_bor_1 {
+  width: 55px;
+  height: 2px;
+  background: black;
+  position: absolute;
+  display: inline-block;
+  top: 36px;
+  left: 71px;
+}
+
+.login_bor_2 {
+  width: 72px;
+  height: 2px;
+  background: black;
+  position: absolute;
+  display: inline-block;
+  top: 36px;
+  left: 62px;
+  display: none;
+}
+
+.login-header span {
+  cursor: pointer;
+}
+
+.loginbox_content {
+  padding: 27px 0 0 34px;
+  border: 1px solid #dcdcdc;
+  height: auto;
+  width: 364px;
+  position: relative;
+}
+
+#username, #userpsd, #email, #tel, #userpsdag {
+  border: 1px solid #c9c9c9;
+  border-radius: 10px;
+  width: 324px;
+  height: 43px;
+  outline: none;
+  text-indent: 35px;
+}
+
+#email, #tel, #username {
+  background: url(img/login_icon.png) no-repeat -5px -48px;
+}
+
+#userpsdag, #userpsd {
+  background: url(img/login_icon.png) no-repeat -4px -94px;
+}
+
+#loginbtn {
+  width: 324px;
+  height: 43px;
+  overflow: hidden;
+  color: #fff;
+  border: 0;
+  font: 15px/43px 'Î¢ÈíÑÅºÚ';
+  text-align: center;
+  cursor: pointer;
+  background: #e30165;
+  display: block;
+  line-height: 40px;
+  margin-left: 2px;
+  border-radius: 4px;
+}
+
+.loginother {
+  padding-top: 30px;
+  position: relative;
+  width: 315px;
+  height: 20px;
+  margin-left: 5px;
+}
+
+.forget_psd {
+  float: left;
+}
+
+.login_reg {
+  float: right;
+  color: red;
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+.form_footer {
+  width: 365px;
+  height: 57px;
+  span {
+    float: left;
+    line-height: 57px;
+    color: #6f6f6f;
+  }
+  a {
+    float: left;
+    padding-top: 10px;
+    padding-left: 10px;
+  }
+}
+
+/*------------footer----------------*/
+
+.footer {
+  width: 980px;
+  height: 122px;
+  margin: 0 auto;
+  background: #cecccf;
+  .foot_copyright {
+    background: #cecccf;
+    padding-top: 80px;
+  }
+}
+
+/*-------------ÑéÖ¤Âë---------------*/
+
+.checkYZM {
+  width: 365px;
+  height: 150px;
+  background: #F2C7C9;
+}
+
+#loginTip {
+  position: relative;
+  width: 100%;
+  height: 30px;
+}
+
+label.error {
+  background: url(img/login_icon.png) no-repeat 0 8px;
+  text-indent: 20px;
+  height: 30px;
+  display: block;
+  line-height: 30px;
+  background: url(img/login_icon.png) no-repeat 0 4px;
+  text-indent: 20px;
+  display: block;
+  color: #e60065;
+  margin-left: 2px;
+}
+
+.ok {
+  width: 30px;
+  height: 18px;
+  background: url(img/l_090.jpg) no-repeat !important;
+  display: inline-block;
+  vertical-align: top;
+  position: absolute;
+  right: 40px;
+  top: -30px;
+}

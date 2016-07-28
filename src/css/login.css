@@ -198,7 +198,6 @@ body {
 }
 
 
-<<<<<<< HEAD
 label.error {
 	background: url(img/login_icon.png) no-repeat 0 8px ;
 	text-indent: 20px;
@@ -206,7 +205,6 @@ label.error {
 	display: block;
 	line-height: 30px;
 }
-=======
 
 label.error {
 	background: url(img/login_icon.png) no-repeat 0 4px ;
@@ -226,4 +224,3 @@ label.error {
     right: 40px;
 	top:-30px
 }
->>>>>>> refs/remotes/origin/master

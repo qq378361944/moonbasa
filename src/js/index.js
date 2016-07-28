@@ -165,7 +165,7 @@ $(function(){
 
 /*登录转过来有用户名*/
 $(function(){
-	if($.cookie("user")!=undefined){
-	$(".logininfo").children("a").eq(1);
+	if($.cookie("username")!=undefined){
+		$("#login").html("欢迎登录:"+$.cookie("username"));
 	}
 });

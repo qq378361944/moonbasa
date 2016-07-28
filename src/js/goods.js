@@ -215,6 +215,22 @@ $(function() {
 $(function() {
 	$("#addcart").click(function() {
 		$(".jiaru").css("display", "block");
+		$("#supernum").html($(".num b").text());
+		var value={};
+			value.goodsid=$(".share p").text().substring(5);
+			value.goodsname = $(".center h2").text();
+			value.money = $(".price b").text();
+			value.color = $(".color div.on").text();
+			value.size = $(".color div.on").closest("a").next().children(".on").children("span").text();
+			value.num = $(".num b").text();
+			value.imgsrc = $(".bg img").attr("src");
+			var arr={};
+			var shopping=JSON.stringify(value);
+			arr[value.goodsid]=shopping;
+			var shoppingArr=JSON.stringify(arr);
+			console.log(arr);
+			$.cookie("shopping",shopping);
+			$.cookie("shoppingArr",shoppingArr);
 	});
 	$(".btn-close").click(function() {
 		$(".jiaru").css("display", "none");
@@ -230,43 +246,47 @@ $(function() {
 $(function() {
 
 	$("#buynow").click(function() {
-		/*var goodsnum=$(".share p").text().substring(5);
-		var goodsname=$(".center h2").text();
-		var money=$(".price b").text();
-		var color=$(".color div.on").text();
-		var size=$(".color div.on").closest("a").next().children(".on").children("span").text();
-		var num=$(".num b").text();
-		var imgsrc=$(".bg img").attr("src");*/
-		/*console.log(goodsNum);
-		console.log(goodsname);
-		console.log(money);
-		console.log(color);
-		console.log(size);
-		console.log(num);
-		console.log(imgsrc);*/
-		/*if(size==""){
-			alert("你的尺码没选哦");
-		}*/
 		// 创建一个空对象，用来保存商品信息
-		var value={};
-		value.goodsid=$(".share p").text().substring(5);
-		value.goodsname = $(".center h2").text();
-		value.money = $(".price b").text();
-		value.color = $(".color div.on").text();
-		value.size = $(".color div.on").closest("a").next().children(".on").children("span").text();
-		value.num = $(".num b").text();
-		value.imgsrc = $(".bg img").attr("src");
-		var shopping=JSON.stringify(value);
-		console.log(shopping);
-		/*$.cookie("value",value);
-		$.cookie("goodsNum",goodsNum, { expires: 7, path: '/' });
-		$.cookie("goodsname",goodsname, { expires: 7, path: '/' });
-		$.cookie("money",money, { expires: 7, path: '/' });
-		$.cookie("color",color, { expires: 7, path: '/' });
-		$.cookie("size",size, { expires: 7, path: '/' });
-		$.cookie("num",num, { expires: 7, path: '/' });
-		$.cookie("imgsrc",imgsrc, { expires: 7, path: '/' });*/
-		$.cookie("shopping",shopping);
+		if($.cookie("shoppingArr")!=undefined){
+		/*var shoppingArr=JSON.parse($.cookie("shoppingArr"));
+		$.each(shoppingArr, function(idx,ele) {
+			var ele=JSON.parse(ele);
+			var size=$(".color div.on").closest("a").next().children(".on").children("span").text()
+			if(ele.size!=size){
+				ele.size+=size;
+				ele.num++;
+			}
+			console.log(ele);
+			var arr={};
+			var shopping=JSON.stringify(ele);
+			var goodsid=$(".share p").text().substring(5);
+			arr[goodsid]=shopping;
+			var shoppingArr=JSON.stringify(arr);
+			console.log(arr);
+			$.cookie("shopping",shopping);
+			$.cookie("shoppingArr",shoppingArr);*/
+			window.location.href="shopcart.html";
+			//window.location.href="shopcart.html";
+		}else{
+			var value={};
+			value.goodsid=$(".share p").text().substring(5);
+			value.goodsname = $(".center h2").text();
+			value.money = $(".price b").text();
+			value.color = $(".color div.on").text();
+			value.size = $(".color div.on").closest("a").next().children(".on").children("span").text();
+			value.num = $(".num b").text();
+			value.imgsrc = $(".bg img").attr("src");
+			var arr={};
+			var shopping=JSON.stringify(value);
+			arr[value.goodsid]=shopping;
+			var shoppingArr=JSON.stringify(arr);
+			console.log(arr);
+			$.cookie("shopping",shopping);
+			$.cookie("shoppingArr",shoppingArr);
+			window.location.href="shopcart.html";
+		}
+		/*$.cookie("imgsrc",imgsrc, { expires: 7, path: '/' });*/
+		
 	});
 
 });

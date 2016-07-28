@@ -1,16 +1,26 @@
 $(function(){
 	/*购物车*/
 	if($.cookie("shopping")==undefined){
+		
 		$(".shopping").children().css({"display":"none"});
 		$("<img/>").attr("src", "../img/nogoods.png").appendTo($(".shopping"));
 	}else{
 		var shopping = JSON.parse($.cookie("shopping"));
-		$("<img/>").attr("src", shopping.imgsrc).appendTo($("#imgsrc"));
-		$("<div/>").html("<i>" + shopping.goodsname + "</i><em>品牌：梦芭莎&nbsp;尺寸：" + shopping.size + "&nbsp;颜色：" + shopping.color + "</em>").appendTo($("#goods"));
-		$("<div/>").html("￥"+shopping.money+".00").appendTo($("#money"));
-		$("<div/>").html("￥"+shopping.money * shopping.num+".00").appendTo($("#hj"));
-		$(".num").val(shopping.num);
-		$(".fukuan").css({"display":"block"});
+		var shoppingArr=JSON.parse($.cookie("shoppingArr"));
+		console.log(shoppingArr);
+		$.each(shoppingArr, function(idx,ele) {
+			console.log(idx+":"+ele);
+			var ele=JSON.parse(ele);
+			$("<img/>").attr("src", ele.imgsrc).appendTo($("#imgsrc"));
+			$("<div/>").html("<i>" + ele.goodsname + "</i><em>品牌：梦芭莎&nbsp;尺寸：" + ele.size + "&nbsp;颜色：" + ele.color + "</em>").appendTo($("#goods"));
+			$("<div/>").html("￥"+ele.money+".00").appendTo($("#money"));
+			$("<div/>").html("￥"+ele.money * shopping.num+".00").appendTo($("#hj"));
+			$(".num").val(ele.num);
+			$(".fukuan").css({"display":"block"});
+			$(".pics").text(shopping.num);
+			$(".howmuch").text(ele.money * shopping.num);
+			
+		});
 		
 	}
 	/*换一组*/

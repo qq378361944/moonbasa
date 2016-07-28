@@ -859,6 +859,17 @@ span.sc a {
 	left: 100px;
 	display: none;
 }
+#supernum{
+	width: 16px;
+	height: 20px ;
+	background: #FFFFFF;
+	position: relative;
+	right: -423px;
+	top: -621px;
+	color: red;
+	text-align: center;
+
+}
 .btn-close{
 	position: relative;
 	width: 30px;

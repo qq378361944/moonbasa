@@ -31,7 +31,7 @@ $(function(){
 			},
 			userpsd: {
 				required: true,
-				minlength: 5
+				minlength:"最短都要5位数吖"
 			},
 			userpsdag: {
 				required: true,
@@ -48,6 +48,28 @@ $(function(){
 		},submitHandler:function(form){
             alert("提交事件!");   
             form.submit();
-       }
+        }    
+	});
+	
+	/*无刷新验证*/
+	$("#email").on("change",function(){
+		$.ajax({
+			type:"get",
+			url:"http://localhost:8080/regCheck.jsp",
+			dataType:"jsonp",
+			data:{"reg":"ok"},
+			success:function(msg){
+				$.each(msg, function(idx,item) {
+					console.log(item.email);
+					if($("#email").val()==item.email){
+						$("#loginTip").html("邮件已经存在");
+					}
+				});
+			}
+		});
+	});
+	
+	$("#loginbtn").click(function(){
+		window.location.href="login.html"
 	});
 });
